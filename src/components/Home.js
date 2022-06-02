@@ -7,6 +7,14 @@ import db from "../Firebase";
 import { collection, getDocs } from "firebase/firestore";
 
 function Home() {
+  // useEffect(() => {
+  //   const querySnapshot = getDocs(collection(db, "cities"));
+  //   querySnapshot.forEach((doc) => {
+  //     // doc.data() is never undefined for query doc snapshots
+  //     console.log(doc.id, " => ", doc.data());
+  //   });
+  // }, []);
+
   return (
     <Container>
       <Imgslider />

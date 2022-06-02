@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 function Header() {
@@ -6,10 +7,13 @@ function Header() {
     <Nav>
       <Logo src="/Images/logo.svg" />
       <NavMenu>
-        <a>
-          <img src="/images/home-icon.svg" />
-          <span>HOME</span>
-        </a>
+        <Link to="/">
+          <a>
+            <img src="/images/home-icon.svg" />
+            <span>HOME</span>
+          </a>
+        </Link>
+
         <a>
           <img src="/images/search-icon.svg" />
           <span>SEARCH</span>
@@ -31,6 +35,10 @@ function Header() {
           <span>SERIES</span>
         </a>
       </NavMenu>
+      <Link to="/Login">
+        <button>Login</button>
+      </Link>
+
       <UserImg src="https://lh3.googleusercontent.com/ogw/ADea4I7bnIl5LqjVLo5ZUmzEYzm0Gen5sLg0KfyucsIWpw=s32-c-mo " />
     </Nav>
   );
